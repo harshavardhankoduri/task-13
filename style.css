@@ -1,0 +1,343 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    position: relative;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    gap: 20px;
+    color: white;
+    padding: 20px;
+    display: flex;
+}
+
+.bold {
+    background-color: transparent;
+    border: none;
+    color: black;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.bold:hover {
+    color: #007BFF;
+}
+
+.logo img {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+span {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    color: white;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+
+.br {
+    background-color: black;
+    padding: 10px;
+}
+
+.house1,
+.house2,
+.house3,
+.house4,
+.house5,
+.house6 {
+    position: relative;
+}
+
+.house {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    border: 1px solid black;
+    border-radius: 5px;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+    font-weight: 100;
+    font-size: large;
+    padding: 10px;
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+}
+
+
+.house1 img {
+    width: 100%;
+    height: 100%;
+}
+
+.house2 img {
+    width: 100%;
+    height: 100%;
+}
+
+.house3 img {
+    width: 100%;
+    height: 100%;
+}
+
+.house4 img {
+    width: 100%;
+    height: 100%;
+}
+
+.house5 img {
+    width: 100%;
+    height: 100%;
+}
+
+.house6 img {
+    width: 100%;
+    height: 100%;
+}
+
+
+.house1 img :hover {
+    opacity: 0;
+}
+
+.house2 img :hover {
+    opacity: 0;
+}
+
+.house3 img :hover {
+    opacity: 0;
+}
+
+.house4 img :hover {
+    opacity: 0;
+}
+
+.house5 img :hover {
+    opacity: 0;
+}
+
+.house6 img :hover {
+    opacity: 0;
+}
+
+.content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: wheat;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.content:hover {
+    opacity: 1;
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+body {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.luffy {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 10px;
+    background-color: rgb(255, 200, 37);
+}
+
+.zoro {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 10px;
+    background-color: rgb(38, 122, 38);
+
+}
+
+.sanji {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 10px;
+    background-color: rgb(38, 97, 121);
+}
+
+.robin {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 10px;
+    background-color: rgb(144, 116, 201);
+}
+
+.submain {
+    width: 100%;
+    margin: 20px 0;
+    font-size: 18px;
+    text-align: left;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.luffy img:hover,
+.zoro img:hover,
+.sanji img:hover,
+.robin img:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+.luffy img,
+.zoro img,
+.sanji img,
+.robin img {
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 1px solid black;
+}
+
+.zoro img {
+    margin-top: 15px;
+}
+
+.sanji img {
+    margin-top: 15px;
+}
+
+.robin img {
+    margin-top: 15px;
+}
+
+.luffy:hover,
+.zoro:hover,
+.sanji:hover,
+.robin:hover {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.button {
+    width: 100%;
+    height: 50px;
+    font-size: large;
+    border: 1px solid black;
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 24px;
+    color: rgb(49, 49, 49);
+}
+
+form {
+    width: 100%;
+    margin: 20px 0;
+    font-size: 18px;
+    text-align: left;
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.text {
+    width: 100%;
+    padding: 10px;
+    height: 40px;
+}
+
+footer {
+    position: relative;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.text{input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"] {
+    width: 1350px;
+    height: 50px;
+    font-size: 18px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: #333;
+    color: white;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}}
+
+input[type="submit"] {
+    width: 250px;
+    height: 60px;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+input[type="submit"]:hover {
+    background-color: #333;
+}
+input[type="submit"]:active {
+    background-color: #555;
+}
